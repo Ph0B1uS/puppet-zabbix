@@ -963,8 +963,8 @@ LoadModulePath=<%= @loadmodulepath %>
 # Default:
 # SMSDevices=
 <% if @smsdevices.any? -%>
-SMSDevices=<%= @smsdevices.join(',') %>
-<% end %>
+SMSDevices=<%= @smsdevices %><% end -%>
+<% end -%>
 
 <% if @zabbix_version.to_f >= 5.4 %>
 ####### For advanced users - TCP-related fine-tuning parameters #######
