@@ -305,7 +305,7 @@ class zabbix (
   $cachesize                                                                  = $zabbix::params::server_cachesize,
   $cacheupdatefrequency                                                       = $zabbix::params::server_cacheupdatefrequency,
   $startdbsyncers                                                             = $zabbix::params::server_startdbsyncers,
-  Optional[String] $smsdevices                                                = $zabbix::params::server_smsdevices,
+  Optional[Array[String[1]]] $smsdevices                                      = $zabbix::params::server_smsdevices,
   $historycachesize                                                           = $zabbix::params::server_historycachesize,
   Zabbix::Historyics $historyindexcachesize                                   = $zabbix::params::server_historyindexcachesize,
   $trendcachesize                                                             = $zabbix::params::server_trendcachesize,
