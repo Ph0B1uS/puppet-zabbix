@@ -833,7 +833,7 @@ Default value: `$zabbix::params::server_javagatewayport`
 
 ##### <a name="-zabbix--smsdevices"></a>`smsdevices`
 
-Data type: `Optional[Array[String[1]]]`
+Data type: `Optional[Array[String]]`
 
 Which devices to use for sms texting
 
